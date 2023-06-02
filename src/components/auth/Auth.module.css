@@ -1,0 +1,127 @@
+.container{
+    background-image: url("../../assets/photo_2023-05-29_03-04-12.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.card{
+    background-color: white;
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: 15px;
+    width: 35%;
+}
+.card h2{
+    font-size: 25px;
+    padding: 0.7em;
+    font-weight: 700;
+}
+form label,form input {
+    display: block;
+}
+form label{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d5d5d5;
+    background-color: transparent;
+    padding: 20px 5px;
+    color: black;
+    font-size: 20px;
+}
+.forgetpassword{
+    text-decoration: none;
+    color: #878787;
+}
+form input::placeholder{
+    font-size: 20px;
+    color: #c2c2c2;
+}
+.language label{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.language{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px;
+}
+.language input{
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+form button{
+    padding: 10px 20px;
+    background: linear-gradient(to right,#00dbde,#fc00ff);
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    margin: 2em 0;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.loginwith button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius:50% ;
+}
+form button:hover{
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.loginwith {
+    margin: 20px 0;
+}
+.card p{
+    margin: 15px 0;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+}
+.logo img,.door img{
+    width: 100%;
+}
+.door{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+@media screen and (max-width: 1500px){
+    .card{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .card{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 700px){
+    .card{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 500px){
+    .card{
+        width: 95%;
+    }
+}

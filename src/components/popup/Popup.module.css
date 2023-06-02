@@ -1,0 +1,100 @@
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0,0,0.5);
+    z-index: 20;
+}
+.card{
+    color: white;
+    width: 30%;
+    height:30%;
+    background-color: #eee;
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    box-shadow: 0px 8px 15px 4px rgb(51, 51, 51);
+    color: black;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+    color: black;
+}
+.content input{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: black;
+}
+.content input:focus-visible{
+    outline: none;
+}
+.icon{
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 4em);
+}
+.exitbtn,.okbtn{
+    padding: 10px 35px;
+    font-size: 20px;
+    margin: 15px;
+    border: none;
+
+}
+.exitbtn{
+    background-color: RGB(255,14,14);
+}
+.okbtn{
+    background-color: 	RGB(25, 135, 84);
+}
+.exit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    color: RGB(255,14,14);
+}
+.error{
+    color: red;
+    margin-top: 15px;
+    font-size: 18px;
+}
+@media screen and (max-width: 1500px){
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .card{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    .card{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 500px){
+    .card{
+        width: 90%;
+        height: 40%;
+    }
+}

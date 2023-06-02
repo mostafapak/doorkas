@@ -1,0 +1,7 @@
+.termcontainer{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

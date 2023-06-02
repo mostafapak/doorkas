@@ -1,0 +1,39 @@
+.container{
+    background-image: url("../../assets/photo_2023-05-29_03-04-12.jpg");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 2em;
+}
+.video{
+    width: 49%;
+    height: 100%;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+@media screen and (max-width: 1000px){
+    .container{
+        display: block;
+    }
+    .video{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .video , .content {
+        margin: auto;
+    }
+}
